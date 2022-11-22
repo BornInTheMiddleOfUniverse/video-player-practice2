@@ -12,12 +12,23 @@
   </head>
 
   <body>
-    <video
+    <video id="video-container"
       controls
       width="700px"
       src="https://serranoarevalo.github.io/notflix/9bfd1023900e31286103369c803c7ee9.ogv"
     ></video>
+
     <div id="videoController">
+      <div id="time">
+        <span id="current-time"> 00:00</span>
+        <span>/</span>
+        <span id="total-time"> 00:00</span>
+      </div>
+
+      <div id="timeline">
+        <input type="range", step="1", value="0", min="0" />
+      </div>
+
       <i id="playPauseBtn" class="fas fa-play"></i>
       <i id="volume" class="fas fa-volume-up"></i>
       <input
@@ -29,5 +40,6 @@
         id="volumeRange"
       />
     </div>
+    <i id="full-screen" class="fas fa-expand"></i>
   </body>
 </html>
